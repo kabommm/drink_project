@@ -1,0 +1,46 @@
+html,body{
+    width : 100vw;
+    height : 100vh;
+    position : relative;
+}
+.container{
+    font-family: 'Ubuntu', sans-serif;
+    width : 90vw;
+    height : 90vh;
+    position : relative;
+    left : 50%;
+    top : 50%;
+    transform: translate(-50%, -50%);
+    border : 3px solid black;
+
+    display : grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 1fr 6fr 1fr;
+    grid-template-areas: 
+    "header header"
+    "nav main"
+    "nav footer";
+    grid-gap : 1vh;
+    padding : 1vh;
+}
+
+.container > *{
+    border : 1px solid black;
+}
+
+/* deskTop */
+@media screen and (max-width : 1024px) {
+    
+}
+
+/* tablet 가로 */
+@media screen and (min-width : 768px) and (max-width : 1023px){
+    .container{
+        grid-template-rows: 1fr 1fr 5fr 1fr;
+        grid-template-areas:
+            "header header"
+            "nav nav"
+            "main main"
+            "footer footer";
+    }
+}

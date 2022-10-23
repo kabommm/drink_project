@@ -1,0 +1,27 @@
+
+.header{
+    grid-area : header;
+
+    display : flex;
+}
+.header a{
+    color : black;
+    font-size : 1.2rem;
+    font-weight : 800;
+    font-style: italic;
+}
+.header > *{
+    border : 1px solid black;
+}
+.header__logo{
+    flex-grow : 1;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__nav{
+    flex-grow : 4;
+}
+.header__menu{
+    flex-grow : 5;
+}

@@ -1,0 +1,10 @@
+.main {
+    grid-area: main;
+
+    display : flex;
+}
+.main > *{
+    flex-grow : 1;
+    height : 50%;
+    border : 1px solid black;
+}
